@@ -1,0 +1,7 @@
+#border{
+	margin:20px auto;
+	width: 800px;
+	height: 300px;
+	border:2px solid blue;
+	border-radius: 8px;
+}

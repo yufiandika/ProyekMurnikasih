@@ -1,0 +1,128 @@
+#slideimg{
+	padding: 10px;
+	width: 100%;
+	height: 400px;
+	position: relative;
+}
+
+*{
+	padding: 0; margin: 0
+}
+
+/*--------------------------------------------------------------*/
+
+/*navigasi header*/
+.topnav ul{
+  padding:0;
+  width:auto;
+  margin:10px 10px;
+  list-style:none;
+  text-align:center; /* Cara membuat link navigasi rata tengah. */
+}
+
+.topnav ul li{
+  display:inline-block; /* inline-block mengikuti kondisi block dan posisi inline akan tetap di tengah */
+  margin-right:-5px;
+}
+
+.topnav ul li a{
+  color:black;
+  background:none;
+  padding:25px 40px;
+  display:block;
+  text-decoration:none;
+  font:700 15px 'open sans',sans-serif;
+  text-transform:uppercase;
+  transition:all .2s ease-in;
+  -moz-transition:all .2s ease-in;
+  -webkit-transition:all .2s ease-in;
+}
+
+.topnav ul li a:hover{
+  background: pink;
+  border-radius: 20px;
+  transition: .3s;
+}
+
+.isi{
+  padding: 40px;
+  position: relative;
+}
+
+.cool-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #fff;
+  transition: width .3s;
+}
+
+.cool-link:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+/*--------------------------------------------------------------*/
+/*Navigasi side-bar*/
+.side-nav{
+  position: relative;
+  width: 20%;
+}
+
+.main-nav {
+  width: 100%;
+  background: rgba(32, 32, 32);
+}
+
+.main-nav li {
+  list-style: none;
+}
+
+.main-nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .2em;
+  color: #818181;
+  display: block;
+  padding: 10px 0 10px 20px;
+  border-bottom: 2px solid gray;
+}
+
+.main-nav a:hover {
+  background: rgba(32, 32, 32);
+  transition: .3s;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.main-nav-ul ul{
+  display: none;
+}
+
+.main-nav-ul li.tap ul{
+  display: block;
+}
+
+.main-nav ul ul a:before {
+  content: '\203A';
+  margin-right: 20px;
+}
+
+.main-nav .sub-arrow:after {
+  content: '\203A';
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+}
+
+.main-nav-ul ul a:before{
+  content: '\203A';
+}
+
+.main-nav li.tap .sub-arrow:after {
+  content: : '\2039';
+}
